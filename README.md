@@ -97,6 +97,7 @@ Because PX-design is broken apart into lots of small, composable modules, it is 
 * **Tools:** Site-wide mixins and functions.
 * **Generic:** Low-specificity, far-reaching rulesets (e.g. normalize.css).
 * **Base:** Unclassed HTML elements (e.g. `a {}`, `blockquote {}`, `address {}`).
+* **Meta:** Shortcut libraries with collections of objects (e.g. meta-lists, meta-buttons).
 * **Objects:** Objects, abstractions, and design patterns (e.g. `.media {}`).
 * **Components:** Discrete, complete chunks of UI (e.g. `.carousel {}`).
 * **Trumps:** High-specificity, very explicit selectors. Overrides and helper classes (e.g. `.hidden {}`).
