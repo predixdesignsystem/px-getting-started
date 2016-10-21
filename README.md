@@ -32,6 +32,8 @@ The quickest, simplest way to get started with PX-design is via the [Starter Kit
     // Settings
     @import "px-colors-design/_settings.colors.scss";
 
+    // Tools
+
     // Generic
     @import "px-normalize-design/_generic.normalize.scss";
     @import "px-box-sizing-design/_generic.box-sizing.scss";
@@ -42,6 +44,13 @@ The quickest, simplest way to get started with PX-design is via the [Starter Kit
     @import "px-viewport-design/_base.viewport.scss";
     @import "px-typography-design/_base.typography.scss";
 
+    // Meta
+
+    // Objects
+
+    // Component
+    // Your css goes in here
+
     // Trumps
     @import "inuit-clearfix/_trumps.clearfix.scss";
     @import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
@@ -51,7 +60,7 @@ This source order is imperative, and underpins the entire PX-design framework.
 
 ## Setting up a project
 
-With PX-design, you are in charge of almost everything; this includes your master Sass file.
+With Predix UI CSS, you are in charge of almost everything; this includes your master Sass file.
 
 You will need to create your own master Sass file, e.g. `px.scss`, and `@import` yours and PX-design's modules into that. This kind of architecture allows you to intersperse PX-design Sass with your own, whereas most other CSS Frameworks and UI Toolkits only permit you to work before or after you've imported them. This is a perfectly valid (example) setup in PX-design:
 
@@ -59,29 +68,29 @@ You will need to create your own master Sass file, e.g. `px.scss`, and `@import`
     @import "px-defaults-design/_settings.defaults.scss";
     @import "px-colors-design/_settings.colors.scss";
     @import "inuit-responsive-settings/_settings.responsive.scss";
-    
+
     // Tools
     @import "px-functions-design/_tools.functions.scss";
     @import "px-mixins-design/_tools.mixins.scss";
     @import "inuit-responsive-tools/_tools.responsive.scss";
-    
+
     // Generic
     @import "px-normalize-design/_generic.normalize.scss";
     @import "px-box-sizing-design/_generic.box-sizing.scss";
     @import "px-helpers-design/_generic.helpers.scss";
-    
+
     // Base
     @import "px-viewport-design/_base.viewport.scss";
     @import "px-typography-design/_base.typography.scss";
-    
+
     // Meta
     @import "px-meta-lists-design/_meta.lists.scss";
-    
+
     // Objects
     @import "px-buttons-design/_objects.buttons.scss";
     @import "px-layout-design/_objects.layout.scss";
     @import "px-box-design/_objects.box.scss";
-    
+
     // Components
     @import "px-some-web-component.scss";
 
@@ -97,6 +106,7 @@ Because PX-design is broken apart into lots of small, composable modules, it is 
 * **Tools:** Site-wide mixins and functions.
 * **Generic:** Low-specificity, far-reaching rulesets (e.g. normalize.css).
 * **Base:** Unclassed HTML elements (e.g. `a {}`, `blockquote {}`, `address {}`).
+* **Meta** for collections of lists and buttons.  
 * **Objects:** Objects, abstractions, and design patterns (e.g. `.media {}`).
 * **Components:** Discrete, complete chunks of UI (e.g. `.carousel {}`).
 * **Trumps:** High-specificity, very explicit selectors. Overrides and helper classes (e.g. `.hidden {}`).
