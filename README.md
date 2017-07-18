@@ -43,7 +43,6 @@ The quickest, simplest way to get started with Predix UI CSS is via the [Starter
     // Base
     @import "px-flexbox-design/_base.flexbox.scss";
     @import "px-viewport-design/_base.viewport.scss";
-    @import "px-typography-design/_base.typography.scss";
 
     // Meta
 
@@ -53,7 +52,6 @@ The quickest, simplest way to get started with Predix UI CSS is via the [Starter
     // Your css goes in here
 
     // Trumps
-    @import "inuit-clearfix/_trumps.clearfix.scss";
     @import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
     @import "px-widths-responsive-design/_trumps.widths-responsive.scss";
 
@@ -63,17 +61,15 @@ This source order is imperative, and underpins the entire Predix UI CSS framewor
 
 With Predix UI CSS, you are in charge of almost everything; this includes your master Sass file.
 
-You will need to create your own master Sass file, e.g. `px.scss`, and `@import` yours and Predix UI CSS's modules into that. This kind of architecture allows you to intersperse Predix UI CSS Sass with your own, whereas most other CSS Frameworks and UI Toolkits only permit you to work before or after you've imported them. This is a perfectly valid (example) setup in Predix UI CSS:
+You will need to create your own master Sass file, e.g. `app.scss`, and `@import` yours and Predix UI CSS's modules into that. This kind of architecture allows you to intersperse Predix UI CSS/Sass with your own, whereas most other CSS Frameworks and UI Toolkits only permit you to work before or after you've imported them. This is a perfectly valid (example) setup:
 
     // Settings
     @import "px-defaults-design/_settings.defaults.scss";
     @import "px-colors-design/_settings.colors.scss";
-    @import "inuit-responsive-settings/_settings.responsive.scss";
 
     // Tools
     @import "px-functions-design/_tools.functions.scss";
     @import "px-mixins-design/_tools.mixins.scss";
-    @import "inuit-responsive-tools/_tools.responsive.scss";
 
     // Generic
     @import "px-normalize-design/_generic.normalize.scss";
